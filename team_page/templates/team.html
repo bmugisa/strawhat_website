@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  {% load static %}
+  {% load bootstrap_icons %}
+  <head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>StrawHat</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- site icons -->
+    <link rel="icon" href="{% static 'fevicon/fevicon.png' %}" type="image/gif" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}" />
+    <!-- Site css -->
+    <link rel="stylesheet" href="{% static 'style.css' %}" />
+    <!-- responsive css -->
+    <link rel="stylesheet" href="{% static 'responsive.css' %}" />
+    <!-- colors css -->
+    <link rel="stylesheet" href="{% static 'colors1.css' %}" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="{% static 'custom.css' %}" />
+    <!-- wow Animation css -->
+    <link rel="stylesheet" href="{% static 'animate.css' %}" />
+    <!--[if lt IE 9]>
+          <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+          <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+          <![endif]-->
+  </head>
+  <body id="default_theme" class="it_service about">
+  <!-- loader -->
+  <div class="bg_load"> <img class="loader_animation" src="{% static 'loaders/loader_1.png' %}" alt="#" /> </div>
+  <!-- end loader -->
+  <!-- header -->
+  <header id="default_header" class="header_style_1">
+    <!-- header top -->
+    <div class="header_top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div class="full">
+              <div class="topbar-left">
+                <ul class="list-inline">
+                  <li> <span class="topbar-label">{% bs_icon 'house-fill' %}</span> <span class="topbar-hightlight">Cham Tower, Kampala, Uganda</span> </li>
+                  <li> <span class="topbar-label">{% bs_icon 'envelope-fill' %}</i></span> <span class="topbar-hightlight"><a href="mailto:info@yourdomain.com">info@yourdomain.com</a></span> </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 right_section_header_top">
+            <div class="float-left">
+              <div class="social_icon">
+                <ul class="list-inline">
+                  <li><a href="https://www.facebook.com/" title="Facebook" target="_blank">{% bs_icon 'facebook' %}</a></li>
+                  <li><a href="https://plus.google.com/" title="Google+" target="_blank">{% bs_icon 'google' %}</a></li>
+                  <li><a href="https://twitter.com" title="Twitter" target="_blank">{% bs_icon 'twitter' %}</a></li>
+                  <li><a href="https://www.linkedin.com" title="LinkedIn" target="_blank">{% bs_icon 'linkedin' %}</a></li>
+                  <li><a href="https://www.instagram.com" title="Instagram" target="_blank">{% bs_icon 'instagram' %}</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="float-right">
+              <div class="make_appo"> <a class="btn white_btn" href="{% url 'contact' %}">Contact Us</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end header top -->
+    <!-- header bottom -->
+    <div class="header_bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
+            <!-- logo start -->
+            <div class="logo"> <a href="{% url 'home' %}"><img src="{% static 'logos/sh_logo.png' %}" alt="logo" /></a> </div>
+            <!-- logo end -->
+          </div>
+          <div class="col-lg-9 col-md-12 col-sm-12 col-xs-12">
+            <!-- menu start -->
+            <div class="menu_side">
+              <div id="navbar_menu">
+                <ul class="first-ul">
+                  <li> <a href="{% url 'home' %}">Home</a></li>
+                  <!--<li> <a href="{% url 'service' %}">Service</a></li>-->
+                  <li> <a class="active" href="#">Team</a></li>
+                  <li><a href="{% url 'about' %}">About Us</a></li>
+                  <!--<li> <a href="{% url 'contact' %}">Contact</a></li>-->
+                </ul>
+              </div>
+              <!--<div class="search_icon">
+                <ul>
+                  <li><a href="#" data-toggle="modal" data-target="#search_bar"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                </ul>
+              </div>-->
+            </div>
+            <!-- menu end -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- header bottom end -->
+  </header>
+  <!-- end header -->
+  <!-- inner page banner -->
+  <div id="inner_banner" class="section inner_banner_section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="full">
+            <div class="title-holder">
+              <div class="title-holder-cell text-left">
+                <h1 class="page-title">About Us</h1>
+                <ol class="breadcrumb">
+                  <li><a href="{% url 'home' %}">Home</a></li>
+                  <li class="active">About Us</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end inner page banner -->
+
+  <div class="section padding_layout_1">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="full">
+            <div class="main_heading text_align_left">
+              <h2>Experienced Staff</h2>
+              <p class="large">Our experts have been featured in press numerous times.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3 col-sm-6">
+          <div class="full team_blog_colum">
+            <div class="it_team_img"> <img class="img-responsive" src="{% static 'it_service/team-member-1.jpg' %}" alt="#"> </div>
+            <div class="team_feature_head">
+              <h4>Dean Michael</h4>
+            </div>
+            <div class="team_feature_social">
+              <div class="social_icon">
+                <ul class="list-inline">
+                  <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
+                  <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
+                  <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
+                  <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
+                  <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="full team_blog_colum">
+            <div class="it_team_img"> <img class="img-responsive" src="{% static 'it_service/team-member-2.jpg' %}" alt="#"> </div>
+            <div class="team_feature_head">
+              <h4>Ruby Jake</h4>
+            </div>
+            <div class="team_feature_social">
+              <div class="social_icon">
+                <ul class="list-inline">
+                  <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
+                  <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
+                  <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
+                  <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
+                  <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="full team_blog_colum">
+            <div class="it_team_img"> <img class="img-responsive" src="{% static 'it_service/team-member-3.jpg' %}" alt="#"> </div>
+            <div class="team_feature_head">
+              <h4>David Hussay</h4>
+            </div>
+            <div class="team_feature_social">
+              <div class="social_icon">
+                <ul class="list-inline">
+                  <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
+                  <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
+                  <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
+                  <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
+                  <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-3 col-sm-6">
+          <div class="full team_blog_colum">
+            <div class="it_team_img"> <img class="img-responsive" src="{% static 'it_service/team-member-1.jpg' %}" alt="#"> </div>
+            <div class="team_feature_head">
+              <h4>Dean Michael</h4>
+            </div>
+            <div class="team_feature_social">
+              <div class="social_icon">
+                <ul class="list-inline">
+                  <li><a class="fa fa-facebook" href="https://www.facebook.com/" title="Facebook" target="_blank"></a></li>
+                  <li><a class="fa fa-google-plus" href="https://plus.google.com/" title="Google+" target="_blank"></a></li>
+                  <li><a class="fa fa-twitter" href="https://twitter.com" title="Twitter" target="_blank"></a></li>
+                  <li><a class="fa fa-linkedin" href="https://www.linkedin.com" title="LinkedIn" target="_blank"></a></li>
+                  <li><a class="fa fa-instagram" href="https://www.instagram.com" title="Instagram" target="_blank"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- section -->
+  <div class="section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="full">
+            <div class="contact_us_section">
+              <div class="call_icon"> <img src="{% static 'it_service/phone_icon.png' %}" alt="#" /> </div>
+              <div class="inner_cont">
+                <h2>REQUEST A FREE QUOTE</h2>
+                <p>Get answers and advice from people you want it from.</p>
+              </div>
+              <div class="button_Section_cont"> <a class="btn dark_gray_bt" href="{% url 'contact' %}">Contact us</a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end section -->
+
+  <div class="section"><br></div>
+
+  <!-- Modal -->
+  <div class="modal fade" id="search_bar" role="dialog">
+    <div class="modal-dialog">
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal"><i class="fa fa-close"></i></button>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-lg-8 col-md-8 col-sm-8 offset-lg-2 offset-md-2 offset-sm-2 col-xs-10 col-xs-offset-1">
+              <div class="navbar-search">
+                <form action="#" method="get" id="search-global-form" class="search-global">
+                  <input type="text" placeholder="Type to search" autocomplete="off" name="s" id="search" value="" class="search-global__input">
+                  <button class="search-global__btn"><i class="fa fa-search"></i></button>
+                  <div class="search-global__note">Begin typing your search above and press return to search.</div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Model search bar -->
+  <!-- footer -->
+  <footer class="footer_style_2">
+    <div class="container-fuild">
+      <div class="row">
+        <div class="map_section">
+          <div class="mapouter"><div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=cham%20towers&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://www.online-timer.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:600px;}</style><a href="https://www.embedgooglemap.net">google map embed responsive</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:600px;}</style></div></div>
+        </div>
+        <div class="footer_blog">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="main-heading left_text">
+                <h2>StrawHat</h2>
+              </div>
+              <p><b><u>Mission</u></b></p>
+              <p>Building Africa One Technological Adventure at a Time.</p>
+              <br>
+              <p><b><u>Vision</u></b></p>
+              <p>A Technological Autonomous Africa that can compete on the global market.</p>
+              <!--<ul class="social_icons">
+                <li class="social-icon fb"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                <li class="social-icon tw"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                <li class="social-icon gp"><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+              </ul>-->
+            </div>
+            <!--<div class="col-md-6">
+              <div class="main-heading left_text">
+                <h2>Additional links</h2>
+              </div>
+              <ul class="footer-menu">
+                <li><a href="{% url 'about' %}"><i class="fa fa-angle-right"></i> About us</a></li>
+                <li><a href="it_term_condition.html"><i class="fa fa-angle-right"></i> Terms and conditions</a></li>
+                <li><a href="it_privacy_policy.html"><i class="fa fa-angle-right"></i> Privacy policy</a></li>
+                <li><a href="it_news.html"><i class="fa fa-angle-right"></i> News</a></li>
+                <li><a href="it_contact.html"><i class="fa fa-angle-right"></i> Contact us</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <div class="main-heading left_text">
+                <h2>Services</h2>
+              </div>
+              <ul class="footer-menu">
+                <li><a href="it_data_recovery.html"><i class="fa fa-angle-right"></i> Data recovery</a></li>
+                <li><a href="it_computer_repair.html"><i class="fa fa-angle-right"></i> Computer repair</a></li>
+                <li><a href="it_mobile_service.html"><i class="fa fa-angle-right"></i> Mobile service</a></li>
+                <li><a href="it_network_solution.html"><i class="fa fa-angle-right"></i> Network solutions</a></li>
+                <li><a href="it_techn_support.html"><i class="fa fa-angle-right"></i> Technical support</a></li>
+              </ul>
+            </div>-->
+            <div class="col-md-6">
+              <div class="main-heading left_text">
+                <h2>Contact us</h2>
+              </div>
+              <p>Cham Tower<br>
+                Kampala, Uganda<br>
+                <span style="font-size:18px;"><a href="tel:+9876543210">+256 706 157582</a></span></p>
+              <div class="footer_mail-section">
+                <form>
+                  <fieldset>
+                  <div class="field">
+                    <input placeholder="Email" type="text">
+                    <button class="button_custom"><i class="fa fa-envelope" aria-hidden="true"></i></button>
+                  </div>
+                  </fieldset>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="cprt">
+          <p>© StrawHat Ltd, All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- end footer -->
+  <!-- js section -->
+  <script src="{% static 'jquery.min.js' %}"></script>
+  <script src="{% static 'bootstrap.min.js' %}"></script>
+  <!-- menu js -->
+  <script src="{% static 'menumaker.js' %}"></script>
+  <!-- wow animation -->
+  <script src="{% static 'wow.js' %}"></script>
+  <!-- custom js -->
+  <script src="{% static 'custom.js' %}"></script>
+  <!-- google map js -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8eaHt9Dh5H57Zh0xVTqxVdBFCvFMqFjQ&callback=initMap"></script>
+  <!-- end google map js -->
+  </body>
+</html>
